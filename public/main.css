@@ -1,0 +1,199 @@
+body {
+    background-image: url('../images/Cyberpunk-City-Street-Scifi-Wallpaper-Graphics-74866949-1.jpg'); /* Adjust the path accordingly */
+    background-size: cover; /* Ensures the background image covers the entire body */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+    font-family: 'Cyberpunk', sans-serif;
+    min-height: 100vh; /* Set minimum height to 100% of the viewport height */
+    margin: 0; /* Remove default margin to ensure full coverage */
+    
+}
+
+@font-face {
+    font-family: 'Cyberpunk';
+    src: url('../fonts/Cybrpnuk2.ttf') format('truetype'); /* Adjust the path accordingly */
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+    color: #FFFF00; /* Lightning yellow neon color */
+    font-family: 'Cyberpunk', sans-serif; /* Use your custom font here */
+}
+
+.header .navbar.bg-body-tertiary {
+    background-color: magenta !important;
+}
+
+
+.navbar a {
+    color: orange; /* Set the text color to orange */
+    /* Add any additional styling you need */
+}
+
+.header .navbar a.nav-link.active,
+.header .navbar a.nav-link:hover {
+    color: orange !important;
+    text-shadow: 0 0 10px rgba(255, 165, 0, 0.8);
+}
+
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 15px;
+}
+
+.footer-text {
+    color: #00FF00; /* Neon green color */
+    font-family: 'YourCustomFont', sans-serif; /* Use your custom font here */
+}
+
+.home-title {
+    text-align: center;
+    margin-bottom: 100px;
+    font-size: 5em;
+}
+
+.post-title {
+    text-align: center;
+    margin: 50px 0 20px;
+}
+
+.post-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 20px; /* Added margin-bottom of 20px */
+    color: #00FF00; /* Neon green color for post content */
+}
+
+.contact-title {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+/* Center the content on the contact page */
+.contact-content {
+    text-align: center;
+    color: #00FF00;
+}
+
+.date {
+    text-align: center;
+    color: #00FF00; /* Neon green color for dates */
+}
+
+/* Style the contact information */
+.contact-info {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #FFFF00;; 
+}
+
+.link-text {
+    color:  #00FF00;
+}
+
+.about-title {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.about-content {
+    text-align: center;
+    color: #00FF00; /* Neon green color */
+    max-width: 800px; /* Adjust the width as needed */
+    margin: 0 auto; /* Center-align the paragraph */
+}
+
+.delete-btn, .edit-btn {
+    display: block;
+    margin: 0 auto; /* Center-align the buttons */
+    text-align: center; /* Center-align the text within the buttons */
+    padding: 10px; /* Add padding to the buttons */
+    border-radius: 5px; /* Add rounded corners */
+    cursor: pointer; /* Add a pointer cursor on hover */
+    font-weight: bold; /* Make the text bold */
+    width: 100px; /* Set the desired width for the buttons */
+}
+
+.edit-btn {
+    background-color: yellow; /* Yellow color for edit button */
+    color: #000; /* Black text color for edit button */
+}
+
+/* Example: Add a bit of margin to separate the buttons */
+.delete-btn {
+    background-color: red;
+    margin-bottom: 10px;
+}
+
+form[action="/create"] input[type="text"],
+form[action="/create"] textarea {
+    width: 100%;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #FFFF00;
+    color: #000;
+}
+
+form[action="/create"] button {
+    display: block;
+    margin: 0 auto;
+}
+
+form[action="/create"] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #00FF00;
+}
+
+.create-title {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+form[action^="/edit"] input[type="text"],
+form[action^="/edit"] textarea {
+    width: 80%; /* Adjust the width as needed */
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #FFFF00;
+    color:#000; /* Neon green text color for better visibility */
+}
+
+form[action^="/edit"] button {
+    display: block;
+    margin: 10px auto; /* Added margin for better spacing */
+    background-color: #00FF00 ; /* Yellow color for the button */
+    color: #FF0000; /* Red color for text on the button */
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+form[action^="/edit"] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #00FF00;
+    margin-top: 20px; /* Added top margin for spacing from the header */
+}
+
+
+.edit-title {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
